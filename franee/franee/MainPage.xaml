@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             x:Class="franee.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <admob:MTAdView AdsId="ca-app-pub-1430833140613652~1295574370" HeightRequest="30"/>
+        <Button Text="Show Video" Clicked="Button_Clicked"/>
+        <Button Text="Show Interstitial" Clicked="Button_Clicked_1"/>
+    </StackLayout>
+
+</ContentPage>
